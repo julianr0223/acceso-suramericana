@@ -1,0 +1,81 @@
+<!DOCTYPE>
+<html>
+<head>
+    <title>ACCESOS DE PRUEBA .SURA Y .SURAMERICANA</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+<div>
+    <h3>SURA</h3>
+    <form method="POST" action="https://grclab.sura.com/modulodiagnosticos/api/acceso/cuestionario">
+        Tipo documento<input type="text" name="x_tid" value="C"><br/>
+        Numero documento<input type="text" name="x_nid" value="1"><br/>
+        Id plantilla<input type="text" name="x_idp" value="39"><br/>
+        <br/>
+        <input type="submit" value="Cargar"/>
+    </form>
+</div>
+
+<div>
+    <h3>SURAMERICANA </h3>
+    <form method="POST" action="https://grclab.suramericana.com/modulodiagnosticos/api/acceso">
+        Tipo documento<input type="text" name="x_tid" value="C"><br/>
+        Numero documento<input type="text" name="x_nid" value="1"><br/>
+        Nombre prestador<input type="text" name="x_prtd" value="el prestador"><br/>
+        Nombre tarea<input type="text" name="x_tar" value="la tarea"><br/>
+        Fuente<input type="text" name="x_fte" value="Distribuidor"><br/>
+        <br/>
+        <input type="submit" value="Cargar"/>
+    </form>
+</div>
+
+<div>
+    <h3>SURA - Girop</h3>
+    <form method="GET"
+          action="https://grclab.sura.com/modulodiagnosticos#/seleccionCliente?fuente=Girop&tipoId=N&numeroId=3005749215&x_prtd=prestador&x_tar=tarea">
+        <br/>
+        <input type="submit" value="Cargar"/>
+    </form>
+</div>
+
+<div>
+    <h3>SURAMERICANA - cliente</h3>
+    <form method="POST" action="https://grclab.suramericana.com/modulodiagnosticos/api/acceso/cuestionario">
+        Tipo documento<input type="text" name="x_tid" value="C"><br/>
+        Numero documento<input type="text" name="x_nid" value="1"><br/>
+        Id plantilla<input type="text" name="x_idp" value="122"><br/>
+        Id sede<input type="text" name="x_ids" value="164919"><br/>
+        <br/>
+        <input type="submit" value="Cargar"/>
+    </form>
+</div>
+
+<div>
+    <h3>SURAMERICANA - promotora</h3>
+    <form method="POST" action="https://grclab.suramericana.com/modulodiagnosticos/api/acceso">
+        Tipo documento<input type="text" name="x_tid" value="C"><br/>
+        Numero documento<input type="text" name="x_nid" value="1"><br/>
+        Fuente<input type="text" name="x_fte" value="Distribuidor"><br/>
+        <br/>
+        <input type="submit" value="Cargar"/>
+    </form>
+</div>
+
+
+<div>
+    <h3>EMPRESA SURA</h3>
+    <form method="POST" action="https://grclab.sura.com/modulodiagnosticos/api/acceso/empresa-sura">
+        Tipo documento<input type="text" name="x_tid" value="C"><br/>
+        Numero documento<input type="text" name="x_nid" value="1"><br/>
+        <br/>
+        <input type="submit" value="Cargar"/>
+    </form>
+</div>
+
+
+</body>
+
+</html>
